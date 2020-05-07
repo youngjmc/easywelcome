@@ -8,11 +8,11 @@ use pocketmine\Server;
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
-use pocketmine\event\player{PlayerJoinEvent, PlayerQuitEvent};
+use pocketmine\event\player\PlayerJoinEvent;
+use pocketmine\event\player\PlayerQuitEvent;
 
 
-class main extends PluginBase implements Listener
-{
+class main extends PluginBase implements Listener {
 
     public function onEnable(): void
     {
