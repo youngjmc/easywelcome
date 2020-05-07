@@ -28,6 +28,7 @@ class main extends PluginBase implements Listener
     {
         $player = $event->getPlayer();
         $event->setJoinMessage($player . " welcome to the server");
+        $player->getItem(2,0);
     }
 
     public function onQuit(PlayerQuitEvent $event)
