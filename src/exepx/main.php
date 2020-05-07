@@ -2,6 +2,7 @@
 
 namespace exepx;
 
+use pocketmine\item\Item;
 use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\event\Listener;
@@ -26,9 +27,13 @@ class main extends PluginBase implements Listener
 
     public function onJoin(PlayerJoinEvent $event)
     {
-        $player = $event->getPlayer();
-        $event->setJoinMessage($player . " welcome to the server");
-        $player->getItem(2,0);
+        $player = $event->getPlayer(); //this gets the player
+        $name = $player->getName();
+        $inv = $player->getInventory(); //this gets the player inventory
+
+        $this->getServer()->broadcastMessage(TextFormat::GREEN . "Welcome to the server buddy");
+        $item = Item::BEDROCK;
+
     }
 
     public function onQuit(PlayerQuitEvent $event)
