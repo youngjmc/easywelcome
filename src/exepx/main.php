@@ -33,7 +33,7 @@ class main extends PluginBase implements Listener
     public function onQuit(PlayerQuitEvent $event)
     {
         $player = $event->getPlayer();
-        $event->getQuitMessage($player . " has left the server ");
+        $event->getQuitMessage($player . " The player has left the server  ");
     }
 
 }
