@@ -12,7 +12,7 @@ use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerQuitEvent;
 
 
-class main extends PluginBase implements Listener {
+class Main extends PluginBase implements Listener {
 
     public function onEnable(): void
     {
